@@ -56,6 +56,22 @@ input{
     background-position-x: 18px;
     background-position-y: 50%;
     padding-right: 18px;
+    transition: .3s ease-in-out;
+}
+
+input:hover{
+    cursor: pointer;
+    border: 1.5px solid var(--Strong-cyan);
+}
+
+#s_Bill{
+    color: red;
+    float: right;
+}
+
+#s_ppl{
+    color: red;
+    float: right;
 }
 
 .tip_select p{
@@ -80,6 +96,18 @@ input{
     margin: 8px 8px 8px 8px;
     padding: 4px 0;
     color: var(--White);
+    transition: 0.3s ease-in-out;
+}
+
+.TBS:hover{
+    color: var(--Very-dark-cyan);
+    background-color: var(--Light-grayish-cyan);
+    cursor: pointer;
+}
+
+.active {
+    color:var(--Very-dark-cyan);
+    background-color: var(--Strong-cyan);
 }
 
 .TBS-custom{
@@ -131,6 +159,8 @@ input{
 .tip_person div{
     width: 50%;
     text-align: right;
+    color: var(--Strong-cyan);
+    font-size: 30px;
 }
 
 .tip_total{
@@ -151,6 +181,8 @@ input{
 .tip_total div{
     width: 50%;
     text-align: right;
+    color: var(--Strong-cyan);
+    font-size: 30px;
 }
 
 .reset{
@@ -160,7 +192,67 @@ input{
     border-radius: 5px;
     padding: 15px 0;
     font-size: 20px;
+    transition: .3s ease-in;
+}
+
+.reset:hover{
+    background-color: var(--Light-grayish-cyan);
+    cursor: pointer;
 }
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media all and (min-width: 500px){
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        margin: auto auto;
+        padding: 30px 15px;
+    }
+
+    .LHS{
+        width: 50%;
+        padding: 0 20px;
+        margin-top: 0rem;
+    }
+
+    .bill_entry{
+        padding-bottom: 20px;
+    }
+
+    .RHS{
+        width: 50%;
+        padding: 0 10px 0 0;
+    }
+
+    .tip_amount{
+        margin: 0;
+        height: 100%;
+        padding: 5rem 1rem 2rem 1rem;
+    }
+
+    .percent{
+        padding: 0;
+    }
+
+    .TBS{
+        width: 30%;
+        margin: 5px;
+    }
+
+    .TBS-custom{
+        width: 29%;
+        margin: 5px;
+    }
+
+    .reset{
+        margin-bottom: 0px;
+        margin-top: 50px;
+    }
+}
