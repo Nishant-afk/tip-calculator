@@ -8,7 +8,6 @@ Done by Nishant:
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -25,17 +24,17 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Calculate the correct tip and total cost of the bill per person
 
-### Screenshot
-
-![](./screenshot.jpg)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://nishant-afk.github.io/tip-calculator/
 
 ## My process
+
+- Started in linear way with mobile view first:
+- Did the basic css and positioning first the did hover effects
+- Then did desktop view with other remaining work
 
 ### Built with
 
@@ -48,7 +47,7 @@ Users should be able to:
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Want to add the effect to button and disabling reset button
 
 
 ### Useful resources
