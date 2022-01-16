@@ -17,47 +17,51 @@
 <body>
   <div class="logo"><img src="images/logo.svg" alt="logo"></div>
   <div class="container">
-    <div class="bill_entry">
-      <p>Bill</p>
-      <input type="text" name="Bill" id="Bill">
-    </div>
-    <div class="tip_select">
-      <p>Select Tip %</p>
-      <div class="percent">
-        <div class="TBS">5%</div>
-        <div class="TBS">10%</div>
-        <div class="TBS">15%</div>
-        <div class="TBS">25%</div>
-        <div class="TBS">50%</div>
-        <input type="text" class="TBS-custom" id="custom" placeholder="Custom">
+    <div class="LHS">
+      <div class="bill_entry">
+        <p>Bill <span id="s_Bill"></span></p>
+        <input type="text" name="Bill"  id="Bill" onkeypress="check_val(event)">
+      </div>
+      <div class="tip_select">
+        <p>Select Tip %</p>
+        <div class="percent">
+          <div class="TBS" id="T1" onclick="tip_cal(.05)">5%</div>
+          <div class="TBS" id="T2" onclick="tip_cal(.1)">10%</div>
+          <div class="TBS" id="T3" onclick="tip_cal(.15)">15%</div>
+          <div class="TBS" id="T4" onclick="tip_cal(.25)">25%</div>
+          <div class="TBS" id="T5" onclick="tip_cal(.5)">50%</div>
+          <input type="text" class="TBS-custom" id="custom" onkeypress="check_val(event)" placeholder="Custom">
+        </div>
+      </div>
+      <div class="num_people">
+        <p>Number of People <span id="s_ppl"></span></p>
+        <input type="text" name="N_of_people" id="people" onkeypress="check_num(event)">
       </div>
     </div>
-    <div class="num_people">
-      <p>Number of People</p>
-      <input type="text" name="N_of_people" id="people">
+    <div class="RHS">
+      <div class="tip_amount">
+        <div class="tip_person">
+          <p>
+            Tip Amount<br>
+            / person
+          </p>
+          <div id="tip_person_amt">$0.00</div>
+        </div>
+        <div class="tip_total">
+          <p>
+            Total<br>
+            / person
+          </p>
+          <div id="tip_total_amt">$0.00</div>
+        </div>
+        <button class="reset" onclick="reset()">RESET</button>
     </div>
-    <div class="tip_amount">
-      <div class="tip_person">
-        <p>
-          Tip Amount<br>
-          / person
-        </p>
-        <div id="tip_person_amt"></div>
-      </div>
-      <div class="tip_total">
-        <p>
-          Total<br>
-          / person
-        </p>
-        <div id="tip_total_amt"></div>
-      </div>
-      <button class="reset">RESET</button>
     </div>
   </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Nishant</a>.
   </div>
 
   <script src="myScript.js"></script>
