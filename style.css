@@ -204,7 +204,7 @@ input:hover{
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
-@media all and (min-width: 500px){
+@media all and (max-width: 500px){
 
     .container{
         display: flex;
