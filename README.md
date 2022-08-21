@@ -5,7 +5,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 Done by Nishant:
 
 ## Table of contents
-[try link](#Linked-here)
+
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Links](#links)
@@ -54,5 +54,4 @@ Want to add the effect to button and disabling reset button
 
 - Stackoverflow
 
-### Linked here
 
